@@ -10,9 +10,11 @@ OB_PREOP_CALLBACK_STATUS OnPreOpenProcessHandle(PVOID RegistrationContext, POB_P
 
 EXTERN_C LPCSTR NTAPI PsGetProcessImageFileName(PEPROCESS Process);
 
-extern "C" NTSTATUS
-DriverEntry(PDRIVER_OBJECT DriverObject, PUNICODE_STRING) {
-	KdPrint(("HandleMonitor DriverEntry entered\n"));
+extern "C" NTKERNELAPI NTSTATUS IoCreateDriver(PUNICODE_STRING DriverName, PDRIVER_INITIALIZE InitializationFunction);
+
+NTSTATUS DriverMain(PDRIVER_OBJECT DriverObject, PUNICODE_STRING RegistryPath) {
+	UNREFERENCED_PARAMETER(RegistryPath);
+	KdPrint(("HandleMonitor DriverMain entered\n"));
 
 	PVOID RegistrationHandle;
 
@@ -86,4 +88,13 @@ OB_PREOP_CALLBACK_STATUS OnPreOpenProcessHandle(PVOID /*RegistrationContext*/, P
 	}
 
 	return OB_PREOP_SUCCESS;
+}
+
+NTSTATUS DriverEntry() {
+	KdPrintEx((0, 0, "[+] Did we enter kernel?\n"));
+
+	UNICODE_STRING DriverName;
+	RtlInitUnicodeString(&DriverName, L"\\Driver\\HandleMonitor");
+
+	return IoCreateDriver(&DriverName, &DriverMain);
 }
