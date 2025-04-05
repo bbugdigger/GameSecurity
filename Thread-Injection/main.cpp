@@ -12,6 +12,7 @@ OB_PREOP_CALLBACK_STATUS OnPreThreadHandle(PVOID RegistrationContext, POB_PRE_OP
 EXTERN_C LPCSTR NTAPI PsGetProcessImageFileName(PEPROCESS Process);
 EXTERN_C BOOLEAN NTAPI PsIsProcessBeingDebugged(PEPROCESS Process);
 
+//Pavel did this in another way: https://github.com/zodiacon/RemoteThreadDetection/blob/master/KDetect/KDetect.cpp
 NTSTATUS DriverEntry() {
 	KdPrintEx((0, 0, "[+] Did we enter kernel?\n"));
 
