@@ -1,6 +1,7 @@
 #include <ntifs.h>
 
 #define PROCESS_CREATE_THREAD		0x0002
+#define PROCESS_SUSPEND_RESUME 		0x0800
 #define PROCESS_TERMINATE			0x0001
 #define PROCESS_VM_READ				0x0010
 #define PROCESS_VM_WRITE			0x0020
@@ -60,6 +61,7 @@ OB_PREOP_CALLBACK_STATUS OnPreThreadHandle(PVOID RegistrationContext, POB_PRE_OP
 	if (!IsDebugged) {
 		Info->Parameters->CreateHandleInformation.DesiredAccess &= ~(
 			PROCESS_CREATE_THREAD |
+			PROCESS_SUSPEND_RESUME |
 			PROCESS_TERMINATE |
 			PROCESS_VM_READ |
 			PROCESS_VM_WRITE |
