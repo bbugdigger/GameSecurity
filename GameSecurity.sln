@@ -10,6 +10,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Anti-Dll-Injection", "Anti-
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Thread-Injection", "Thread-Injection\Thread-Injection.vcxproj", "{1C5E8BEB-F907-6A39-2D98-01003E96C4E9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IntegrityChecking", "IntegrityChecking", "{1EC8073A-B060-4927-8DF8-BB3E716013A0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Polymorphism", "Polymorphism", "{4C71CE81-70AF-46EC-875A-2A2BAFFCD474}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RuntimeFunctionEncryption", "RuntimeFunctionEncryption\RuntimeFunctionEncryption.vcxproj", "{5A83C589-B472-4018-9532-206DEAD72892}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SelfIntegrityCheck", "SelfIntegrityCheck\SelfIntegrityCheck.vcxproj", "{B5DFEF94-2FC9-434E-A78B-A03832F5B70E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KernelBlocklist", "KernelBlocklist\KernelBlocklist.vcxproj", "{2AAB722E-993F-457F-6D51-6664B93C0865}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM64 = Debug|ARM64
@@ -54,12 +64,42 @@ Global
 		{1C5E8BEB-F907-6A39-2D98-01003E96C4E9}.Release|x64.ActiveCfg = Release|x64
 		{1C5E8BEB-F907-6A39-2D98-01003E96C4E9}.Release|x64.Build.0 = Release|x64
 		{1C5E8BEB-F907-6A39-2D98-01003E96C4E9}.Release|x64.Deploy.0 = Release|x64
+		{5A83C589-B472-4018-9532-206DEAD72892}.Debug|ARM64.ActiveCfg = Debug|x64
+		{5A83C589-B472-4018-9532-206DEAD72892}.Debug|ARM64.Build.0 = Debug|x64
+		{5A83C589-B472-4018-9532-206DEAD72892}.Debug|x64.ActiveCfg = Debug|x64
+		{5A83C589-B472-4018-9532-206DEAD72892}.Debug|x64.Build.0 = Debug|x64
+		{5A83C589-B472-4018-9532-206DEAD72892}.Release|ARM64.ActiveCfg = Release|x64
+		{5A83C589-B472-4018-9532-206DEAD72892}.Release|ARM64.Build.0 = Release|x64
+		{5A83C589-B472-4018-9532-206DEAD72892}.Release|x64.ActiveCfg = Release|x64
+		{5A83C589-B472-4018-9532-206DEAD72892}.Release|x64.Build.0 = Release|x64
+		{B5DFEF94-2FC9-434E-A78B-A03832F5B70E}.Debug|ARM64.ActiveCfg = Debug|x64
+		{B5DFEF94-2FC9-434E-A78B-A03832F5B70E}.Debug|ARM64.Build.0 = Debug|x64
+		{B5DFEF94-2FC9-434E-A78B-A03832F5B70E}.Debug|x64.ActiveCfg = Debug|x64
+		{B5DFEF94-2FC9-434E-A78B-A03832F5B70E}.Debug|x64.Build.0 = Debug|x64
+		{B5DFEF94-2FC9-434E-A78B-A03832F5B70E}.Release|ARM64.ActiveCfg = Release|x64
+		{B5DFEF94-2FC9-434E-A78B-A03832F5B70E}.Release|ARM64.Build.0 = Release|x64
+		{B5DFEF94-2FC9-434E-A78B-A03832F5B70E}.Release|x64.ActiveCfg = Release|x64
+		{B5DFEF94-2FC9-434E-A78B-A03832F5B70E}.Release|x64.Build.0 = Release|x64
+		{2AAB722E-993F-457F-6D51-6664B93C0865}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{2AAB722E-993F-457F-6D51-6664B93C0865}.Debug|ARM64.Build.0 = Debug|ARM64
+		{2AAB722E-993F-457F-6D51-6664B93C0865}.Debug|ARM64.Deploy.0 = Debug|ARM64
+		{2AAB722E-993F-457F-6D51-6664B93C0865}.Debug|x64.ActiveCfg = Debug|x64
+		{2AAB722E-993F-457F-6D51-6664B93C0865}.Debug|x64.Build.0 = Debug|x64
+		{2AAB722E-993F-457F-6D51-6664B93C0865}.Debug|x64.Deploy.0 = Debug|x64
+		{2AAB722E-993F-457F-6D51-6664B93C0865}.Release|ARM64.ActiveCfg = Release|ARM64
+		{2AAB722E-993F-457F-6D51-6664B93C0865}.Release|ARM64.Build.0 = Release|ARM64
+		{2AAB722E-993F-457F-6D51-6664B93C0865}.Release|ARM64.Deploy.0 = Release|ARM64
+		{2AAB722E-993F-457F-6D51-6664B93C0865}.Release|x64.ActiveCfg = Release|x64
+		{2AAB722E-993F-457F-6D51-6664B93C0865}.Release|x64.Build.0 = Release|x64
+		{2AAB722E-993F-457F-6D51-6664B93C0865}.Release|x64.Deploy.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{1C5E8BEB-F907-6A39-2D98-01003E96C4E9} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{5A83C589-B472-4018-9532-206DEAD72892} = {4C71CE81-70AF-46EC-875A-2A2BAFFCD474}
+		{B5DFEF94-2FC9-434E-A78B-A03832F5B70E} = {1EC8073A-B060-4927-8DF8-BB3E716013A0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C36C994D-0BF1-41B4-8028-953967FC5BAB}
