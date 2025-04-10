@@ -20,6 +20,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SelfIntegrityCheck", "SelfI
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KernelBlocklist", "KernelBlocklist\KernelBlocklist.vcxproj", "{2AAB722E-993F-457F-6D51-6664B93C0865}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SignatureChecker", "SignatureChecker\SignatureChecker.vcxproj", "{143D937E-8A69-4DA8-803B-F8242287E3DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM64 = Debug|ARM64
@@ -92,6 +94,14 @@ Global
 		{2AAB722E-993F-457F-6D51-6664B93C0865}.Release|x64.ActiveCfg = Release|x64
 		{2AAB722E-993F-457F-6D51-6664B93C0865}.Release|x64.Build.0 = Release|x64
 		{2AAB722E-993F-457F-6D51-6664B93C0865}.Release|x64.Deploy.0 = Release|x64
+		{143D937E-8A69-4DA8-803B-F8242287E3DF}.Debug|ARM64.ActiveCfg = Debug|x64
+		{143D937E-8A69-4DA8-803B-F8242287E3DF}.Debug|ARM64.Build.0 = Debug|x64
+		{143D937E-8A69-4DA8-803B-F8242287E3DF}.Debug|x64.ActiveCfg = Debug|x64
+		{143D937E-8A69-4DA8-803B-F8242287E3DF}.Debug|x64.Build.0 = Debug|x64
+		{143D937E-8A69-4DA8-803B-F8242287E3DF}.Release|ARM64.ActiveCfg = Release|x64
+		{143D937E-8A69-4DA8-803B-F8242287E3DF}.Release|ARM64.Build.0 = Release|x64
+		{143D937E-8A69-4DA8-803B-F8242287E3DF}.Release|x64.ActiveCfg = Release|x64
+		{143D937E-8A69-4DA8-803B-F8242287E3DF}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
