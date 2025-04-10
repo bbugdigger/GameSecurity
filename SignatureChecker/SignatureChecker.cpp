@@ -162,6 +162,7 @@ bool ExtractSignatureInfo(const wchar_t* filePath) {
     return false;
 }
 
+//TODO: Catalog Signature Extraction
 int wmain(int argc, wchar_t* argv[]) {
     //if (argc != 2) {
         //std::wcerr << L"Usage: " << argv[0] << L" <PE_File_Path>\n";
