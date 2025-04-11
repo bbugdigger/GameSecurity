@@ -37,13 +37,13 @@ std::vector<CodeCave> FindCodeCaves(HANDLE hProcess) {
             std::vector<BYTE> memContent(memInfo.RegionSize);
             SIZE_T bytesRead;
             if (ReadProcessMemory(hProcess, memInfo.BaseAddress, memContent.data(), memInfo.RegionSize, &bytesRead)) {
-                DWORD caveStart = 0;
-                DWORD caveSize = 0;
+                UINT_PTR caveStart = 0;
+                SIZE_T caveSize = 0;
 
                 for (int i = 0; i < bytesRead; i++) {
                     if (memContent[i] == 0x00 || memContent[i] == 0xCC) {
                         if (caveSize == 0)
-                            caveStart = (DWORD)memInfo.BaseAddress + i;
+                            caveStart = (UINT_PTR)memInfo.BaseAddress + i;
 
                         caveSize++;
                     }
