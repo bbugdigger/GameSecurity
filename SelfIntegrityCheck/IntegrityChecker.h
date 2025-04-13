@@ -5,6 +5,8 @@
 #include "Undefined.h"
 #include "CRC.h"
 
+//checkout: https://github.com/afulsamet/integrity/blob/main/integrity_check.hpp
+
 using namespace UndefinedNt;
 
 #define CALLBACK_TYPE void()
